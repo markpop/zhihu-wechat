@@ -38,18 +38,23 @@ app.use('/', wechat('dongjianhua').text(function (message, req, res, next) {
   res.reply('text');
 }).image(function (message, req, res, next) {
   // TODO
+  console.log(message);
 }).voice(function (message, req, res, next) {
   // TODO
   console.log(message);
   res.reply('text');
 }).video(function (message, req, res, next) {
   // TODO
+  console.log(message);
 }).location(function (message, req, res, next) {
   // TODO
+  console.log(message);
 }).link(function (message, req, res, next) {
   // TODO
+  console.log(message);
 }).event(function (message, req, res, next) {
   // TODO
+  console.log(message);
 }).middlewarify());
 
 http.createServer(app).listen(app.get('port'), function(){
