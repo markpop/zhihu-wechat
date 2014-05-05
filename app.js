@@ -32,7 +32,7 @@ if ('development' == app.get('env')) {
 
 // app.get('/', routes.index);
 // app.get('/users', user.list);
-app.use('/wechat', wechat('some token').text(function (message, req, res, next) {
+app.use('/wechat', wechat('dongjianhua').text(function (message, req, res, next) {
   // TODO
   console.log(message);
   res.reply('text');
